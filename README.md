@@ -10,7 +10,7 @@ To download the ModPack:
 
   
 To install the ModPack:
-  - Open Steam, Library, then Right-Click ***:7 Days to Die:***;
+  - Open Steam, Library, then Right-Click ***7 Days to Die***;
   - Click on Properties, Installed Files, then ***"Browse..."*** at the top;
   - Open ***"Mods"*** folder, then drag and drop all of the downloaded folders inside of it.
   - You are now able to load up the game, and enjoy the mods!
