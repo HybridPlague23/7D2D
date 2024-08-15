@@ -5,15 +5,14 @@ To download the ModPack:
   - Return to the main ***"7D2D"*** Repository *(click the title at the top)*;
   - Above the folders, on the right, click the ***"Code"*** dropbox;
   - Then click ***"Download ZIP"*** at the bottom;
-  - Save and UNZIP it to your desktop, or anywhere you can find.
+  - Save and UNZIP the ***"7D2D-main.zip"*** to your desktop, or anywhere you can find.
 
 
   
 To install the ModPack:
   - Open Steam, Library, then Right-Click ***:7 Days to Die:***;
   - Click on Properties, Installed Files, then ***"Browse..."*** at the top;
-  - Inside of the main ***"7 Days to Die"*** folder, create a new folder named ***"Mods"***;
-  - Open the newly created ***"Mods"*** folder, then drag and drop all of the downloaded folders inside of it.
+  - Open ***"Mods"*** folder, then drag and drop all of the downloaded folders inside of it.
   - You are now able to load up the game, and enjoy the mods!
 
 # WARNING:
