@@ -20,4 +20,4 @@ To install the ModPack:
 
 # WARNING:
 ## Before playing an existing world, load up a NEW world to ensure the mods are working correctly!
-### Any loss of data is not my fault.
+### Any loss of data is not my fault. Failed loading can cause your player to completely reset!
