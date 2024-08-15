@@ -15,6 +15,9 @@ To install the ModPack:
   - Open ***"Mods"*** folder, then drag and drop all of the downloaded folders inside of it.
   - You are now able to load up the game, and enjoy the mods!
 
+### When you start up the game, you will get a warning regarding "ANTICHEAT INCOMPATIBLE MODS", just press "OK"
+### This warning is caused by the "FasterBuilding" folder because it changes some hard-coded properties. This will not impact the game negatively.
+
 # WARNING:
 ## Before playing an existing world, load up a NEW world to ensure the mods are working correctly!
 ### Any loss of data is not my fault.
