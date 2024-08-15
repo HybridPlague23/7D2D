@@ -1,0 +1,22 @@
+<configs>
+
+<append xpath="/item_modifiers">
+
+	<!-- Create the Ultra Super Charger Mod -->
+	<item_modifier name="modVehicleUltraSuperCharger" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleUltraSuperChargerDesc"/>
+		<property name="UnlockedBy" value="modVehicleUltraSuperChargerSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier4"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="255,155,0"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value="5"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value="3"/>
+		</effect_group>
+	</item_modifier>
+	
+</append>
+
+
+</configs>

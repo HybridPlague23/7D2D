@@ -1,0 +1,13 @@
+<config>
+
+<append xpath="/recipes">
+	<!-- Creates the recipe for Ultra Super Charger Mod -->
+	<recipe name="modVehicleUltraSuperCharger" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="20"/>
+		<ingredient name="resourceMetalPipe" count="15"/>
+		<ingredient name="resourceRadiator" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+	</recipe>
+</append>
+
+</config>

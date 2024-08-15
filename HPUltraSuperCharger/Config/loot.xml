@@ -1,0 +1,7 @@
+<configs>
+<!-- Adds the Ultra Super Charger Schematic to random loot chance -->
+<append xpath="/lootcontainers/lootgroup[@name='vehicleModSchematics03']">
+	<item name="modVehicleUltraSuperChargerSchematic"/>
+</append>
+
+</configs>

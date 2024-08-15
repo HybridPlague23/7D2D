@@ -1,0 +1,4 @@
+key,English
+
+materialMreinforced_steel_shapes,"Reinforced Steel"
+reinforcedSteelShapes:VariantHelper,"Reinforced Steel Block"

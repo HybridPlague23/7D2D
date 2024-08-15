@@ -1,0 +1,24 @@
+<config>
+	<!-- Removes the open and close time from the traders configs -->
+	
+					<!-- Joel -->
+	<removeattribute xpath="/traders/trader_info[@id='1']/@open_time" />
+	<removeattribute xpath="/traders/trader_info[@id='1']/@close_time" />
+
+					<!-- Bob -->
+	<removeattribute xpath="/traders/trader_info[@id='6']/@open_time" />
+	<removeattribute xpath="/traders/trader_info[@id='6']/@close_time" />
+	
+					<!-- Jen -->
+	<removeattribute xpath="/traders/trader_info[@id='2']/@open_time" />
+	<removeattribute xpath="/traders/trader_info[@id='2']/@close_time" />
+	
+					<!-- Hugh -->
+	<removeattribute xpath="/traders/trader_info[@id='7']/@open_time" />
+	<removeattribute xpath="/traders/trader_info[@id='7']/@close_time" />
+	
+					<!-- Rekt -->
+	<removeattribute xpath="/traders/trader_info[@id='8']/@open_time" />
+	<removeattribute xpath="/traders/trader_info[@id='8']/@close_time" />
+
+</config>

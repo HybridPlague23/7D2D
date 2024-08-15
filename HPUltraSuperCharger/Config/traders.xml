@@ -1,0 +1,7 @@
+<config>
+<!-- Adds the Ultra Super Charger Schematic to Trader inventories -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsVehiclesMods']">
+	<item name="modVehicleUltraSuperChargerSchematic"/>
+</append>
+
+</config>

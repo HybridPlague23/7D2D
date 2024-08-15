@@ -1,0 +1,17 @@
+<config>
+
+<!-- Makes the Carbon Fiber Tools unlockable through the Harvest Tools skill tree -->
+<append xpath="/progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingHarvestingTools']">
+	<display_entry icon="meleeToolPickT2SteelPickaxe" icon_tint="255,155,0" name_key="harvestToolsCFiber" has_quality="true" unlock_level="91,93,95,97,99,100" >
+		<unlock_entry item="meleeToolCarbonFiberPickaxe" unlock_tier="1" />
+		<unlock_entry item="meleeToolCarbonFiberShovel" unlock_tier="1" />
+		<unlock_entry item="meleeToolCarbonFiberAxe" unlock_tier="1" />
+	</display_entry>
+</append>
+
+<!-- Adds the Carbon Fiber Tools to the Harvest Tools skill tree menu -->
+<append xpath="/progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingHarvestingTools']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="91,100" value="1" tags="meleeToolCarbonFiberPickaxe,meleeToolCarbonFiberShovel,meleeToolCarbonFiberAxe"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="93,95,97,99,100" value="1,2,3,4,5" tags="meleeToolCarbonFiberPickaxe,meleeToolCarbonFiberShovel,meleeToolCarbonFiberAxe"/>
+</append>
+</config>

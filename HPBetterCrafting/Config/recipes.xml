@@ -1,0 +1,17 @@
+<config>
+
+<append xpath="/recipes">
+
+	<!-- Improved Heating Element -->
+	<recipe name="toolImprovedElement" count="1" tags="perkAdvancedEngineering,learnable" craft_area="workbench" craft_time="180">
+		<ingredient name="resourceForgedSteel" count="200"/>
+		<ingredient name="resourceScrapBrass" count="200"/>
+		<ingredient name="resourceElectricParts" count="25"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="resourceForgedSteel,resourceScrapBrass,resourceElectricParts"/>
+		</effect_group>
+	</recipe>
+
+</append>
+
+</config>

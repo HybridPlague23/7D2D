@@ -1,0 +1,12 @@
+harvestToolsCFiber,"Carbon Fiber Tools"
+meleeToolCarbonFiberPickaxe,"Carbon Fiber Pickaxe"
+meleeToolCarbonFiberPickaxeDesc,"The Harder the tool, the better it can break shit.\n \nRepair with a Repair Kit.\nScrap to Carbon Fiber Pieces."
+meleeToolCarbonFiberShovel,"Carbon Fiber Shovel"
+meleeToolCarbonFiberShovelDesc,"The Harder the tool, the better it can break shit.\n \nRepair with a Repair Kit.\nScrap to Carbon Fiber Pieces."
+meleeToolCarbonFiberAxe,"Carbon Fiber Axe"
+meleeToolCarbonFiberAxeDesc,"The Harder the tool, the better it can break shit.\n \nRepair with a Repair Kit.\nScrap to Carbon Fiber Pieces."
+
+resourceForgedCarbonSteel,"Forged Carbon Steel"
+resourceCarbonFiber,"Carbon Fiber"
+resourceForgedCarbonSteelDesc,"Can be crafted at the forge after installing a crucible upgrade. Forged Carbon is used to make some of the strongest items."
+resourceCarbonFiberDesc,"Can be crafted at a chemistry station, and used to craft Carbon Fiber items."

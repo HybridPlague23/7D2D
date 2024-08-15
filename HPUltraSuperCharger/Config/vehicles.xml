@@ -1,0 +1,8 @@
+<configs>
+
+<!-- Makes brakes better to handle the ultra super charger -->
+<setattribute xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@name='brakeTorque']" name="value">10000000</setattribute>
+<setattribute xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='brakeTorque']" name="value">10000000</setattribute>
+<setattribute xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='brakeTorque']" name="value">10000000</setattribute>
+
+</configs>

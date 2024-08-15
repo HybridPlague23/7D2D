@@ -1,0 +1,17 @@
+<configs>
+<append xpath="/items">
+	<!-- Create the Ultra Super Charger Mod Schematic -->
+	<item name="modVehicleUltraSuperChargerSchematic">
+		<property name="Extends" value="schematicNoQualityMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="255, 155, 0"/>
+		<property name="Unlocks" value="modVehicleUltraSuperCharger"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modVehicleUltraSuperCharger" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+</append>
+</configs>

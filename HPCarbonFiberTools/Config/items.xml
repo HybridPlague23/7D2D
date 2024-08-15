@@ -1,0 +1,211 @@
+<config>
+<append xpath="">
+		<!-- Carbon Fiber Steel -->
+	<item name="resourceForgedCarbonSteel">
+		<property name="HoldType" value="45"/>
+		<property name="DescriptionKey" value="resourceForgedCarbonSteelDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="Stacknumber" value="500"/> <!-- STK resource -->
+		<property name="EconomicValue" value="50"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value="15"/>
+		<property name="RepairTime" value="1"/>
+		<property name="RepairAmount" value="400"/>
+		<property name="SoundPickup" value="forgedmetal_grab"/>
+		<property name="SoundPlace" value="forgedmetal_place"/>
+	</item>
+
+	<!-- Carbon Fiber -->
+	<item name="resourceCarbonFiber">
+		<property name="HoldType" value="45"/>
+		<property name="DescriptionKey" value="resourceCarbonFiberDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MclothStable"/>
+		<property name="Stacknumber" value="250"/> <!-- STK resource -->
+		<property name="CraftingIngredientTime" value="10"/>
+		<property name="RepairTime" value=".6"/>
+		<property name="RepairAmount" value="400"/>
+		<property name="Weight" value="1"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="Group" value="Resources,Chemicals"/>
+		<property name="SoundPickup" value="plantfibers_grab"/>
+		<property name="SoundPlace" value="plantfibers_place"/>
+	</item>
+
+	<!-- Carbon Fiber Pickaxe -->
+	<item name="meleeToolCarbonFiberPickaxe">
+		<property name="Extends" value="meleeToolPickT2SteelPickaxe"/>
+		<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
+		<property name="CustomIconTint" value="46,46,46"/>
+ 		<property name="DisplayType" value="melee"/>
+		<property name="HoldType" value="4"/>
+		<property name="Meshfile" value="@:Other/Items/Tools/pickaxe_steelPrefab.prefab"/>
+		<property name="Weight" value="1"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="EconomicValue" value="1500"/>
+		<property name="TraderStageTemplate" value="baseTier3"/><!-- meleeToolPickT2SteelPickaxe -->
+		<property name="Material" value="MresourceCarbonFiber"/>
+		<property name="UnlockedBy" value="craftingHarvestingTools"/><!-- meleeToolSteelSetSchematic, -->
+		<property name="Group" value="Tools/Traps"/>
+		<property name="SoundUnholster" value="weapon_unholster"/>
+		<property name="SoundHolster" value="weapon_holster"/>
+		
+		<property class="Action0">
+			<property name="GrazeStart" value=".5"/>
+			<property name="GrazeEnd" value=".6"/>
+			<property name="SwingDegrees" value="65"/>
+			<property name="SwingAngle" value="180"/>
+			<property name="UseGrazingHits" value="true"/>
+		</property>
+		<property class="Action1">
+			<property name="UsePowerAttackAnimation" value="true"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="GrazeStart" value=".4"/>
+			<property name="GrazeEnd" value=".48"/>
+			<property name="SwingDegrees" value="110"/>
+			<property name="SwingAngle" value="90"/>
+		</property>
+		<effect_group name="meleeToolCarbonFiberPickaxe">
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="20.6" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="2500,5000" tier="1,6" tags="perkMiner69r"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+			<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+			<passive_effect name="ModSlots" operation="base_set" value="3,4,4,4,5,5" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="27.9" tags="perkMiner69r"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random EntityDmg -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="BlockDamage" operation="base_set" value="130" tags="perkMiner69r,miningTool"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random BlockDmg -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="41.3" tags="secondary"/>
+		</effect_group>
+	</item>
+	
+	<!-- Carbon Fiber Shovel -->
+	<item name="meleeToolCarbonFiberShovel">
+		<property name="Extends" value="meleeToolShovelT2SteelShovel"/>
+		<property name="Tags" value="melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill"/>
+		<property name="Meshfile" value="@:Other/Items/Tools/shovel_steelPrefab.prefab"/>
+		<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+		<property name="CustomIconTint" value="46,46,46"/>
+		<property name="Weight" value="1"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="EconomicValue" value="1500"/>
+		<property name="TraderStageTemplate" value="baseTier3"/><!-- meleeToolShovelT2SteelShovel -->
+		<property name="Material" value="MresourceCarbonFiber"/>
+		<property name="UnlockedBy" value="craftingHarvestingTools"/><!-- meleeToolSteelSetSchematic, -->
+		<property name="SoundUnholster" value="weapon_unholster"/>
+		<property name="SoundHolster" value="weapon_holster"/>
+
+		<property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+			<property name="Sound_start" value="shovel_metal_swinglight"/>
+			<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+			<property name="Sound_start" value="shovel_metal_swinglight"/>
+			<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+		</property>
+
+		<effect_group name="meleeToolCarbonFiberShovel">
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="21.9" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="2500,5000" tier="1,6" tags="perkMiner69r"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+			<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+			<passive_effect name="ModSlots" operation="base_set" value="3,4,4,4,5,5" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="35" tags="perkMiner69r"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random EntityDmg -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="BlockDamage" operation="base_set" value="146" tags="perkMiner69r"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random BlockDmg -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="43.1" tags="secondary"/>
+		</effect_group>
+	</item>
+	
+	<!-- Carbon Fiber Axe -->
+	<item name="meleeToolCarbonFiberAxe">
+		<property name="Extends" value="meleeToolAxeT2SteelAxe"/>
+		<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+		<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/>
+		<property name="CustomIconTint" value="46,46,46"/>
+		<property name="EconomicValue" value="1500"/>
+		<property name="TraderStageTemplate" value="baseTier3"/><!-- meleeToolAxeT2SteelAxe -->
+		<property name="UnlockedBy" value="craftingHarvestingTools"/><!-- meleeToolSteelSetSchematic, -->
+		<property name="Material" value="MresourceCarbonFiber"/>
+		<property name="Weight" value="1"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="SoundUnholster" value="weapon_unholster"/>
+		<property name="SoundHolster" value="weapon_holster"/>
+		<property name="SoundPickup" value="axe_steel_grab"/>
+		<property name="SoundPlace" value="axe_steel_place"/>
+		<property class="Action0">
+			<property name="Sound_start" value="axe_steel_swinglight"/>
+		</property>
+		<property class="Action1">
+			<property name="Sound_start" value="axe_steel_swingheavy"/>
+		</property>
+		<effect_group name="meleeToolCarbonFiberAxe">
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r,axe"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="23.6" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="2500,5000" tier="1,6" tags="perkMiner69r"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+			<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+			<passive_effect name="ModSlots" operation="base_set" value="3,4,4,4,5,5" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="58" tags="perkMiner69r"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random EntityDmg -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="BlockDamage" operation="base_set" value="135" tags="perkMiner69r"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/> <!-- random BlockDmg -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+			<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1.75" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="48.2" tags="secondary"/>
+		</effect_group>
+	</item>
+</append>
+</config>

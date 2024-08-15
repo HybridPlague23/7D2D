@@ -1,0 +1,8 @@
+<config>
+
+<!-- DO NOT TOUCH
+	Modifies the Forge menu to include new tool icon -->
+<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowToolsForge']/@name">HPwindowToolsForge</set>
+<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowFuel']/@name">HPwindowFuel</set>
+
+</config>

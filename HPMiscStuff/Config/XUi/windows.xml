@@ -1,0 +1,6 @@
+<configs>
+
+<!-- Enables Target Health Bars -->
+<setattribute xpath="/windows/window[@name='windowTargetBar']" name="visibility">always</setattribute>
+
+</configs>

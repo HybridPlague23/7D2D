@@ -1,0 +1,17 @@
+<config>
+<append xpath="/recipes">
+
+	<!-- Creates the recipe for Empty Jar -->
+	<recipe name="drinkJarEmpty" count="3" material_based="true" craft_area="forge" is_trackable="true" craft_time="2" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="unit_glass" count="5"/>
+		<ingredient name="unit_clay" count="1"/>
+	</recipe>
+	
+	<!-- Creates the recipe for Empty Can -->
+	<recipe name="drinkCanEmpty" count="3" material_based="true" craft_area="forge" is_trackable="true" craft_time="2" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="unit_glass" count="5"/>
+		<ingredient name="unit_clay" count="1"/>
+	</recipe>
+
+</append>
+</config>

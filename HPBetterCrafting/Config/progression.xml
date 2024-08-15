@@ -1,0 +1,22 @@
+<config>
+
+<!-- Increases crafting speed of Cement Mixers from Advanced Engineering perks by 25% each level -->
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+			<passive_effect name="CraftingTime" operation="perc_add" level="3,5" value="-0.25" tags="cementMixerCrafting"/>
+			<passive_effect name="CraftingTime" operation="perc_add" level="4,5" value="-0.25" tags="cementMixerCrafting"/>
+			<passive_effect name="CraftingTime" operation="perc_add" level="5,5" value="-0.25" tags="cementMixerCrafting"/>
+			<!-- Increases Forging speed at level 5 by 5% -->
+			<passive_effect name="CraftingTime" operation="perc_add" level="5,5" value="-0.05" tags="perkAdvancedEngineering"/>
+</append>
+
+<!-- Creates the Smelter perk -->
+<append xpath="/progression/perks">
+	<perk name="Smelter" parent="attIntellect" name_key="Expert Smelter" desc_key="attSmelterDesc" icon="ui_game_symbol_smelter" max_level="1">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect Lvl 6"/></level_requirements>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,1" value="1" tags="toolImprovedElement"/>
+			<effect_description level="1" desc_base="Improved Heating" long_desc_key="Unlocks the Improved Heating Element tool."/>
+		</effect_group>
+	</perk>
+
+</config>

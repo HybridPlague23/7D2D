@@ -1,0 +1,17 @@
+<configs>
+<append xpath="/recipes">
+
+	<!-- Creates the recipe for Kitchen Sink -->
+	<recipe name="sinkKitchen" count="1">
+		<ingredient name="resourceMetalPipe" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="1"/>
+	</recipe>
+	
+	<!-- Creates the recipe for Reinforced Steel Shapes -->
+	<recipe name="reinforcedSteelShapes:VariantHelper" count="1" craft_time="5">
+		<ingredient name="resourceForgedSteel" count="30"/>
+	</recipe>
+	
+	
+</append>
+</configs>

@@ -1,0 +1,6 @@
+key,English
+
+attSmelterDesc,"Specialize your self in the art of smelting.\nUnlocks the Improved Heating Element to\nincrease forge crafting speeds by 40%."
+toolImprovedElement,Improved Heating Element
+toolImprovedElementDesc,"Optional tool for the Forge. Forge Crafting Speed +40%"
+toolBellows,"Advanced Bellows",Item,,,Original Bellows,,

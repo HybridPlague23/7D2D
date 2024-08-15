@@ -1,0 +1,4 @@
+key,English
+modVehicleUltraSuperCharger,"Vehicle Ultra Super Charger"
+modVehicleUltraSuperChargerDesc,"Fast as fuck boiiiss...."
+modVehicleUltraSuperChargerSchematic,"Vehicle Ultra Super Charger Schematic"
