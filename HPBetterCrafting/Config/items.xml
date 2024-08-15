@@ -4,6 +4,8 @@
 
 <!-- Make Nailguns repair/upgrade faster -->
 	<setattribute xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']" name="value">0.10</setattribute>
+</append>
+
 
 <!-- Make Advanced Bellows smelt faster -->
 <remove xpath="/items/item[@name='toolBellows']" />
@@ -22,8 +24,8 @@
 		<property name="DisplayType" value="toolBellows"/>
 		<property name="ItemTypeIcon" value="forge"/>
 		<effect_group tiered="false">
-			<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.6"/> <!-- this is essentially a multiplier -->
-			<display_value name="dCraftingSmeltTime" value=".6"/>
+			<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.65"/> <!-- this is essentially a multiplier -->
+			<display_value name="dCraftingSmeltTime" value=".65"/>
 		</effect_group>
 	</item>
 
@@ -46,9 +48,6 @@
 			<display_value name="dCraftingTime" value=".4"/>
 		</effect_group>
 	</item>
-
-	</append>
-
 
 </append>
 

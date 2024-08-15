@@ -18,5 +18,5 @@
 			<effect_description level="1" desc_base="Improved Heating" long_desc_key="Unlocks the Improved Heating Element tool."/>
 		</effect_group>
 	</perk>
-
+</append>
 </config>

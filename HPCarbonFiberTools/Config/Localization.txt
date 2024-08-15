@@ -1,3 +1,5 @@
+key,English
+
 harvestToolsCFiber,"Carbon Fiber Tools"
 meleeToolCarbonFiberPickaxe,"Carbon Fiber Pickaxe"
 meleeToolCarbonFiberPickaxeDesc,"The Harder the tool, the better it can break shit.\n \nRepair with a Repair Kit.\nScrap to Carbon Fiber Pieces."

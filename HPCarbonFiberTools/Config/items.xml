@@ -1,5 +1,5 @@
 <config>
-<append xpath="">
+<append xpath="/items">
 		<!-- Carbon Fiber Steel -->
 	<item name="resourceForgedCarbonSteel">
 		<property name="HoldType" value="45"/>
