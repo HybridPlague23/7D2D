@@ -1,10 +1,7 @@
 <config>
 
-<append xpath="/items">
-
 <!-- Make Nailguns repair/upgrade faster -->
-	<setattribute xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']" name="value">0.10</setattribute>
-</append>
+<setattribute xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']" name="value">0.10</setattribute>
 
 
 <!-- Make Advanced Bellows smelt faster -->
