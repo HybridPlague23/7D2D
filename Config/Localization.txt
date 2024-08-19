@@ -1,8 +1,0 @@
-key,English
-
-
-DFLathe,Portable Lathe
-latheDesc,"Portable is relative in this instance, because it's still huge. Used for making gun parts.\n \nCan be crafted in a Workbench."
-cncMachine,Lathe
-
-gunPartsGroupDesc,"Scrap advanced armor, tools and weapons to acquire these items. Use them to craft new items.\n \nCan be crafted in a Portable Lathe."

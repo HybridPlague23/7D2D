@@ -1,7 +1,0 @@
-<config>
-	<append xpath="/ui_display_info/crafting_category_display">
-		<crafting_category_list display_type="DFLathe">
-			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
-		</crafting_category_list>
-	</append>
-</config>
